@@ -2,7 +2,7 @@
   <artifact type="jar" name="WhiteBoardTemplate:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/WhiteBoardTemplate_jar</output-path>
     <root id="archive" name="WhiteBoardTemplate.jar">
-      <element id="module-output" name="WhiteBoardTemplate" />
+      <element id="module-output" name="Simple_Encoder" />
     </root>
   </artifact>
 </component>

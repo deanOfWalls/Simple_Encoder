@@ -67,9 +67,9 @@ public class EncoderDecoderApp {
 
     // Define a method to save text to a file
     public static void saveToFile(String text, String filePath) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-            // Write the text to the file
-            writer.write(text);
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {  // Set the second parameter to 'true' for appending
+            writer.write(text);  // Write the text to the file
+            writer.newLine();  // Add a new line
         } catch (IOException e) {
             // Handle any IOExceptions that occur
             System.out.println("An error occurred while saving the file: " + e.getMessage());
