@@ -23,7 +23,7 @@ public class EncoderDecoderApp {
         while (true) {
             // Prompt the user to enter a command
             System.out.print("Enter your command (encode/decode): ");
-            // Read the command from the user
+            // Read the command from the user and use twim to remove leading and trailing whitespaces
             command = scanner.nextLine().trim();
 
             // Check if the command starts with "encode: "
